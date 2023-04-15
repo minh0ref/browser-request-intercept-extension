@@ -1,0 +1,22 @@
+{
+
+  "description": "Demonstrating webRequests",
+  "manifest_version": 2,
+  "name": "webRequest-demo",
+  "version": "1.0",
+
+  "permissions": [
+    "tabs",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.example.net/"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "options_page": "options.html"
+
+}
